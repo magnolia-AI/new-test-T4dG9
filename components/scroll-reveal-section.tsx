@@ -56,4 +56,3 @@ export function ScrollRevealSection({
     </div>
   );
 }
-      EOF
