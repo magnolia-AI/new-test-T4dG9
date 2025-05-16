@@ -29,4 +29,3 @@ export function useScrollAnimation() {
 
   return { scrollY, scrollDirection };
 }
-      EOF
