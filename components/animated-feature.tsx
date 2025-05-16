@@ -46,4 +46,3 @@ export function AnimatedFeature({ icon, title, description, index }: AnimatedFea
     </motion.div>
   );
 }
-      EOF
