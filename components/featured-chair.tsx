@@ -57,4 +57,3 @@ export function FeaturedChair({
     </div>
   );
 }
-      EOF
