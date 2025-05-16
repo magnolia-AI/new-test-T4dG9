@@ -8,8 +8,8 @@ import { MobileNav } from '@/components/mobile-nav'
 
 
 export const metadata: Metadata = {
-  title: 'Next.js Template',
-  description: 'A customizable template built with Next.js and Tailwind CSS',
+  title: 'ModernChair | Premium Designer Chairs',
+  description: 'Discover our collection of premium designer chairs for modern spaces',
   icons: {
     icon: '/favicon.ico',
   },
@@ -33,22 +33,18 @@ export default function RootLayout({
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
               <div className="flex items-center gap-2">
 
-                {/* 
-                  TEMPLATE SECTION: Mobile Navigation
-                  This is a template mobile navigation, uncomment to use
-                  Remember to update the mobile navigation in the mobile-nav.tsx file
-                */}
-                {/* <MobileNav /> */}
-                <div className="font-semibold">Template Logo</div>
+                <MobileNav />
+                <div className="font-semibold text-xl">ModernChair</div>
               </div>
-              {/* <nav className="hidden md:flex gap-6">
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 1</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 2</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 3</a>
-              </nav> */}
+              <nav className="hidden md:flex gap-6">
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Collection</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Designers</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              </nav>
               <div className="flex items-center gap-2">
                 <ThemeToggle />
-                <Button variant="outline" size="sm">Template Button</Button>
+                <Button variant="outline" size="sm">Shop Now</Button>
               </div>
             </div>
           </header>
@@ -111,7 +107,7 @@ export default function RootLayout({
 
               <div className="mt-8 pt-4 text-center">
                 <p className="text-sm text-muted-foreground">
-                  © 2024 Template Brand. All rights reserved.
+                  © 2025 ModernChair. All rights reserved.
                 </p>
               </div>
             </div>
@@ -122,3 +118,8 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+
+
+

@@ -1,46 +1,74 @@
-'use client'
+      'use client';
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu } from 'lucide-react'
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 export function MobileNav() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu className="h-5 w-5" />
+          <MenuIcon className="h-6 w-6" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[240px] sm:w-[300px]">
+      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
         <nav className="flex flex-col gap-4 mt-8">
-          {/* <a
+          <a
             href="#"
-            className="px-2 py-1 text-foreground hover:text-primary transition-colors"
             onClick={() => setOpen(false)}
+            className="block px-2 py-3 text-lg hover:bg-accent rounded-md transition-colors"
           >
-            Link 1
+            Collection
           </a>
           <a
             href="#"
-            className="px-2 py-1 text-foreground hover:text-primary transition-colors"
             onClick={() => setOpen(false)}
+            className="block px-2 py-3 text-lg hover:bg-accent rounded-md transition-colors"
           >
-            Link 2
+            Designers
           </a>
           <a
             href="#"
-            className="px-2 py-1 text-foreground hover:text-primary transition-colors"
             onClick={() => setOpen(false)}
+            className="block px-2 py-3 text-lg hover:bg-accent rounded-md transition-colors"
           >
-            Link 3
-          </a> */}
+            About
+          </a>
+          <a
+            href="#"
+            onClick={() => setOpen(false)}
+            className="block px-2 py-3 text-lg hover:bg-accent rounded-md transition-colors"
+          >
+            Contact
+          </a>
         </nav>
       </SheetContent>
     </Sheet>
-  )
-} 
+  );
+}
+
+function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  );
+}
+      EOF
