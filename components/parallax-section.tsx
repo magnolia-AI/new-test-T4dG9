@@ -64,4 +64,3 @@ export function ParallaxSection({ imageUrl, title, subtitle }: ParallaxSectionPr
     </div>
   );
 }
-      EOF
