@@ -7,6 +7,7 @@ import { AnimatedFeature } from '@/components/animated-feature'
 import { ChairCard } from '@/components/chair-card'
 import { FeaturedChair } from '@/components/featured-chair'
 import { ScrollRevealSection } from '@/components/scroll-reveal-section'
+import { QualityIcon, SustainableIcon, ComfortIcon, QuoteIcon } from '@/components/icons'
 
 export default function Home() {
   return (
@@ -357,3 +358,4 @@ function QuoteIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
+
