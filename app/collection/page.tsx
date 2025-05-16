@@ -157,4 +157,3 @@ export default function CollectionPage() {
     </div>
   );
 }
-      EOF
